@@ -152,7 +152,7 @@ footer {
 }
 #about main {
     display: flex;
-    height: 800px;
+    height: 600px;
     align-items: center;
     margin-top: 50px;
 }
