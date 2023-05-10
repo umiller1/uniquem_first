@@ -15,7 +15,6 @@ img {
          url('../fonts/lato-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'lator';
@@ -23,7 +22,6 @@ img {
          url('../fonts/lato-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'staat';
