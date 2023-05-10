@@ -8,6 +8,7 @@
 img {
     object-fit: cover;
 }
+/* FONTS */
 @font-face {
     font-family: 'latob';
     src: url('../fonts/lato-bold-webfont.woff2') format('woff2'),
