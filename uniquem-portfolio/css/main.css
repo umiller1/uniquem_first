@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
+    outline: none;
 }
 img {
     object-fit: cover;
@@ -30,10 +31,10 @@ img {
     font-weight: normal;
     font-style: normal;
 }
-h1, h2 {
+h1, h2, legend {
     font-family: 'staat', script;
 }
-h3, h4, p, a, li, blockquote {
+h3, h4, p, a, li, blockquote, input, label {
     font-family: 'lator', script;
 }
 header nav, main {
@@ -78,6 +79,7 @@ ul li a:hover {
 /* MAIN */
 main {
     width: 90vw;
+    min-height: 100vh;
     margin: 0 auto;
 }
 
@@ -178,10 +180,68 @@ footer {
     background-color: transparent;
     color: green;
 }
+/* CONTACT PAGE */
+form {
+    display: flex;
+    max-width: 1440px;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+form fieldset {
+    border: none;
+    width: 100%;
+}
+form legend {
+    text-align: center;
+    font-size: 4rem;
+}
+form div {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1;
+    column-gap: 25px;
+    margin-bottom: 25px;
+}
+form .names {
+    display: flex;
+    flex-flow: row nowrap;
+}
+form .names div{
+    width: calc(50% - 25px);
+    margin-bottom: 0;
+}
+form label {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+form input, form textarea, form input::placeholder {
+    font-size: 1.25rem;
+    padding: .75rem 0 .75rem .5rem;
+    background-color: #efefef;
+}
+form input, form textarea {
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+form input:focus, form textarea:focus {
+    border-color: pink;
+}
+form input#submit {
+    width: 100%;
+    background-color: transparent;
+    border-color: pink;
+}
+form input#submit:hover {
+    background-color: pink;
+    color: black;
+    cursor: pointer;
+}
 /* PROJECTS PAGE */
 #projects-head {
     text-align: center;
-    margin: 1rem auto;
+    margin: 2rem auto;
+    font-size: 4rem;
 }
 .projects-gallery {
     display: flex;
@@ -221,7 +281,7 @@ footer {
     width: 2rem;
 }
 .projects-gallery .card h2 {
-    padding: 1rem 0 0 1rem;
+    padding: 1.25rem 0 0 1.25rem;
     font-size: 2.5rem;
 }
 .projects-gallery .card a, .projects-gallery .card a:visited {
@@ -231,7 +291,7 @@ footer {
     align-items: center;
     color: white;
     text-decoration: none;
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 1.25rem 1.25rem 1.25rem;
 }
 .projects-gallery .card a img {
     filter: invert(96%) sepia(0%) saturate(7456%) hue-rotate(100deg) brightness(110%) contrast(101%);
