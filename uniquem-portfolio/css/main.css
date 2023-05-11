@@ -36,7 +36,7 @@ h1, h2 {
 h3, h4, p, a, li, blockquote {
     font-family: 'lator', script;
 }
-header nav, main, footer p {
+header nav, main {
     max-width: 1440px !important;
 }
 
