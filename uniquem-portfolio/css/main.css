@@ -186,10 +186,14 @@ footer {
     gap: 25px;
 }
 .projects-gallery .card {
-    background-image: url(../images/project-1.jpg) no-repeat;
+    background-image: url(../images/project-1.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     width: calc(33% - 25px);
     height: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
 }
 .projects-gallery .card img {
     width: 2rem;
