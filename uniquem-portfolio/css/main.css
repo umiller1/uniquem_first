@@ -186,6 +186,7 @@ footer {
 .projects-gallery {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
     gap: 25px;
 }
@@ -221,10 +222,12 @@ footer {
 }
 .projects-gallery .card h2 {
     padding: 1rem 0 0 1rem;
+    font-size: 2.5rem;
 }
 .projects-gallery .card a, .projects-gallery .card a:visited {
     display: flex;
     justify-content: space-between;
+    font-weight: 600;
     align-items: center;
     color: white;
     text-decoration: none;
@@ -232,6 +235,12 @@ footer {
 }
 .projects-gallery .card a img {
     filter: invert(96%) sepia(0%) saturate(7456%) hue-rotate(100deg) brightness(110%) contrast(101%);
+}
+.projects-gallery .card a:hover {
+    color: lightpink;
+}
+.projects-gallery .card a:hover img {
+    filter: invert(76%) sepia(24%) saturate(667%) hue-rotate(306deg) brightness(99%) contrast(113%);
 }
 
 /* MEDIA QUERIES AND RESPONSIVENESS */
