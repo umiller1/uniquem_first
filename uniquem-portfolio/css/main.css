@@ -181,11 +181,18 @@ footer {
 /* PROJECTS PAGE */
 .projects-gallery {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     align-items: center;
+    gap: 25px;
 }
 .projects-gallery .card {
-    background-image: ;
+    background-image: url(../images/project-1.jpg) no-repeat;
+    background-size: cover;
+    width: calc(33% - 25px);
+    height: 400px;
+}
+.projects-gallery .card img {
+    width: 2rem;
 }
 
 /* MEDIA QUERIES AND RESPONSIVENESS */
