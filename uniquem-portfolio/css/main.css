@@ -255,8 +255,9 @@ form input#submit:hover {
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 100%), url(../images/project-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: calc(33% - 25px);
-    height: 400px;
+    height: 60vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
